@@ -1,0 +1,296 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;  
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.Container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  flex: 1;
+
+}
+.sidebar{
+ 
+  width: 70px;;
+  background: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 30px rgba(200, 200, 200, 0.3); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: aliceblue;
+   display: flex;           
+  flex-direction: column;   
+  align-items: center;      
+  justify-content: center;
+  height: 100vh;
+  border-radius: 5px;
+  position: relative;
+}
+.navbar{
+  display:flex;
+  height: 50px;
+  width: 100%;
+  background-color:#F8F8FF  ;
+  border-radius: 5px;
+align-items: center;
+justify-content: center;
+position: relative;
+
+}
+.dashboard{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+    border-radius: 5px;
+    /* padding: 20px; */
+  background-color:whitesmoke;
+}
+.greets{
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+}
+.layout1{
+  display: flex;
+  justify-content:center;
+    padding: 20px;
+      gap: 10px;
+}
+.layout1 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 200px;
+  padding: 5px;
+  height: 200px;
+  border-radius: 15px;
+  border: 5px blanchedalmond;
+background-color:white;
+
+ 
+}
+.layout2{
+  display: flex;
+  justify-content:center;
+    padding: 20px;
+  gap: 10px;
+  position: relative;
+}
+.layout2 div{
+  right: 10px;
+  width: 200px;
+ display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 200px;
+  border-radius: 15px;
+  border: 5px blanchedalmond;
+  background-color:white;
+}
+.button{
+ position: absolute;
+   top: 25px;
+  right: 1px;
+  border: none;
+  cursor: pointer;
+}
+.Dt{
+  position: absolute;
+  display: flex;
+  left: 10px;
+  text-align: center;
+  gap: 20px;
+}
+.Icon{
+  position: absolute;
+  display: flex;
+  right: 10px;
+  text-align: center;
+  gap: 20px;}
+
+  .sidebar.expand{
+    width: 250px;
+    background-color: #F8F8FF;
+    color: black;
+  }
+  .menu{
+    width: 100%;
+    animation: fade-In 0.4s ease;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+
+  }
+  .menu-header{
+    display: flex;
+    justify-content:space-between;
+    gap: 100px;
+   position: absolute;
+    align-items: center;
+    top: -100px;
+/* bottom: 300px; */
+left: 50px; 
+  }
+  #close-btn{
+    background: transparent;
+    color: black;
+    border:none ;
+    cursor: pointer;
+
+
+  }
+  .ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    list-style: none;
+  }
+  .ul li{
+    font-size: x-large;
+  }
+
+@keyframes fade-In {
+  
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  
+}
+.layout1 div:hover{
+  height: 250px;
+  width: 250px;
+}
+.layout2 div:hover{
+  height: 250px;
+  width: 250px;
+}
+.img1 {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  object-position: center;
+ 
+  border-radius: 10px;
+}
+.bars{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+}
+.modal-overlay{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+ background: rgba(0,0,0,0.4); 
+top: 0;
+bottom: 0;
+}
+.modal {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+.model-btn{
+  height: 5%;
+  width: 5px;
+
+
+}
+.Box{
+  height: 100%;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex: 1;
+}
+.Barbox-settings{
+  height:100% ;
+  width:30%;
+  border-radius: 10px;
+  background-color: aliceblue;
+
+}
+.leftside-box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Description{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+}
+.info{
+  width: 100%;
+  height: 10%;
+
+}
+.miniDash{
+  height: 100%;
+  position: fixed;
+  background-color:white;
+  width: 100%;
+}
+.infopage{
+   height: 100%;
+  position: fixed;
+  background-color:white;
+  width: 100%;
+
+}
+/* .dashchild{
+   height: 100vh;
+   width: 100%;
+   overflow:scroll;
+} */
+.useriinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
