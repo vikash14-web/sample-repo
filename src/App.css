@@ -1,4 +1,4 @@
-/* html, body, #root {
+html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;  
@@ -10,10 +10,11 @@
 .Container{
   height: 100vh;
   width: 100vw;
+  column-rule-width:0cap;
   display: flex;
   
   
-} */
+}
 
 .main{
   display: flex;
